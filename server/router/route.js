@@ -4,12 +4,21 @@ var router=express.Router();
 
 
 router.get('/',(req,res)=>{
-    res.render('index')
+    res.render('index');
+  
 });
 
-router.get('login',(req,res)=>{
-    res.send('welcome in login page')
+router.get('/signup',(req,res)=>{
+    res.render('contact')
+});
+
+router.get('/login',(req,res)=>{
+    res.render('login')
+});
+router.get('/payment',(req,res)=>{
+    res.render('payment');
 })
+
 
 
 

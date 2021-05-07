@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="css/payment.css"/>
+
+ <%- include('partials/nav'); -%>
+
+ <br>
+ <div style="background-image: url('./../images/photo1.png');" class="full">
+ <div class="center">
+    <div class="payment">
+        <img src="./../images/photo1.png" alt="image" />
+        <p>im3ch</p>
+        <h2>payment info</h2>
+    </div>
+     <form class="form-group">
+     <div class="form">
+         <input type="radio" placeholder="select your payment type" />
+         <select>
+             <option>debit</option>
+             <option>credit</option>
+             <option>cash</option>
+         </select>    
+     </div>
+
+     <br>
+     <h1 class="head1">payment information</h1>   
+     <div class="form-group">
+         <input type="text" class="form-control text-uppercase" id="card" aria-describedby="password" placeholder="enter  card name">
+     </div>
+         
+         <br>
+         <div class="form-group">
+             <input type="number" class="form-control text-uppercase" id="cardnumber" aria-describedby="cardno" placeholder="Enter card number">
+         </div>
+         <br>
+         <div class="form-group" id="form">
+             <div class="form1">
+                <input type="Date" class="form-control text-uppercase" id="date" aria-describedby="date" placeholder="Mm/Yy">
+             </div>
+           <div>
+            <input type="number" class="form-control text-uppercase" id="cvc" aria-describedby="cvc" placeholder="CVC">
+         </div>
+        </div>
+         <br>
+         <div class="text-center">
+             <button class="btn btn-primary text-align-center font-weight-bold">Next</button>
+         </div>
+     </form>
+</div>
+</div>
